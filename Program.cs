@@ -5,7 +5,8 @@ using HelloApi.Features;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
+builder.Services.AddMediatR(cfg
+    => cfg.RegisterServicesFromAssembly(typeof(Program).Assembly));
 
 builder.Services.AddOpenApi();
 
@@ -13,8 +14,9 @@ var app = builder.Build();
 
 if (app.Environment.IsDevelopment())
 {
-    app.MapScalarApiReference(); 
     app.MapOpenApi(); 
+    app.MapScalarApiReference(options
+        => options.Title = "Hello Api"); 
 }
 
 app.UseHttpsRedirection();
