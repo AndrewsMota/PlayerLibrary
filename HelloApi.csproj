@@ -13,4 +13,8 @@
     <PackageReference Include="Scalar.AspNetCore" Version="2.0.12" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="WebApp\Controllers\" />
+  </ItemGroup>
+
 </Project>
