@@ -14,7 +14,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Application\Data\" />
+    <Folder Include="Application\Models\" />
+    <Folder Include="Application\Services\" />
     <Folder Include="WebApp\Controllers\" />
+    <Folder Include="WebApp\Views\" />
   </ItemGroup>
 
 </Project>
