@@ -1,6 +1,6 @@
 using FluentResults;
 using MediatR;
 
-namespace HelloApi.Application.Features.Requests;
+namespace Application.Features.Requests;
 
 public sealed record HelloRequest(string Name) : IRequest<Result<string>>;

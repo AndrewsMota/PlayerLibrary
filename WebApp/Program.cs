@@ -1,4 +1,4 @@
-using HelloApi.Application.Features.Requests;
+using Application.Features.Requests;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Scalar.AspNetCore;

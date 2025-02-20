@@ -1,8 +1,8 @@
-using MediatR;
+using Application.Features.Requests;
 using FluentResults;
-using HelloApi.Application.Features.Requests;
+using MediatR;
 
-namespace HelloApi.Application.Features.Handlers; 
+namespace Application.Features.Handlers; 
 
 public class HelloHandler : IRequestHandler<HelloRequest, Result<string>>
 {

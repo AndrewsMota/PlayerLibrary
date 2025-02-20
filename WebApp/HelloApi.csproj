@@ -7,18 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="FluentResults" Version="3.16.0" />
-    <PackageReference Include="MediatR" Version="12.4.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.1" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.3" />
     <PackageReference Include="Scalar.AspNetCore" Version="2.0.12" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Data\" />
-    <Folder Include="Application\Models\" />
-    <Folder Include="Application\Services\" />
-    <Folder Include="WebApp\Controllers\" />
-    <Folder Include="WebApp\Views\" />
+    <ProjectReference Include="..\Application\Application.csproj" />
   </ItemGroup>
-
+  
 </Project>
