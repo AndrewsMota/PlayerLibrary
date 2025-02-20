@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace Application.Models;
+namespace Domain.Models;
 
-public class User : IdentityUser<Guid>
+public sealed class User : IdentityUser<Guid>
 {
     public User(Guid id, string name, string email, string password)
     {
