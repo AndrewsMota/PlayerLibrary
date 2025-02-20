@@ -1,7 +1,7 @@
+using Application.Features.Requests;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Scalar.AspNetCore;
-using HelloApi.Features;
 
 var builder = WebApplication.CreateBuilder(args);
 
